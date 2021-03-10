@@ -6,53 +6,53 @@ $(function() {
 
 	// map of RIPE (IPv4) root system tests per root-letter
 	const measurements = {
-		'a':  10309,
-		'b':  10310,
-		'c':  10311,
-		'd':  10312,
-		'e':  10313,
-		'f':  10304,
-		'g':  10314,
-		'h':  10315,
-		'i':  10305,
-		'j':  10316,
-		'k':  10301,
+//		'a':  10309,
+//		'b':  10310,
+//		'c':  10311,
+//		'd':  10312,
+//		'e':  10313,
+//		'f':  10304,
+//		'g':  10314,
+//		'h':  10315,
+//		'i':  10305,
+//		'j':  10316,
+//		'k':  10301,
 		'l':  10308,
-		'm':  10306
+//		'm':  10306
 	};
 
 	// map of RSO names
 	const rso = {
-		'a': 'Verisign',
-		'b': 'ISI',
-		'c': 'Cogent',
-		'd': 'UMD',
-		'e': 'NASA',
-		'f': 'ISC',
-		'g': 'DISA',
-		'h': 'ARL',
-		'i': 'Netnod',
-		'j': 'Verisign',
-		'k': 'RIPE',
+//		'a': 'Verisign',
+//		'b': 'ISI',
+//		'c': 'Cogent',
+//		'd': 'UMD',
+//		'e': 'NASA',
+//		'f': 'ISC',
+//		'g': 'DISA',
+//		'h': 'ARL',
+//		'i': 'Netnod',
+//		'j': 'Verisign',
+//		'k': 'RIPE',
 		'l': 'ICANN',
-		'm': 'WIDE'
+//		'm': 'WIDE'
 	};
 
 	// map of regexes that extract the RSO's site-specific code from a hostname.bind string
 	const regexes = {
-		'a': /^(?:rootns-|nnn1-)([a-z]{3})\d$/,
-		'b': /^b\d-([a-z]{3})$/,
-		'c': /^([a-z]{3})\d[a-z]\.c\.root-servers\.org$/,
-		'd': /^([a-z]{4})\d\.droot\.maxgigapop\.net$/,
-		'e': /^(?:[a-z]\d+)\.([a-z]{3}[a-z]?)\.eroot$/,
-		'f': /^([a-z]{3})(?:\d[a-z]|\.cf)\.f\.root-servers\.org$/,
-		'g': /^groot-?-(.*?)-.*?(\.net)?$/,
-		'h': /^\d+\.([a-z]{3})\.h\.root-servers\.org$/,
-		'i': /^s\d\.([a-z]{3})$/,
-		'j': /^(?:rootns-(?:el)?|nnn1-)([a-z]{3})\d$/,
-		'k': /^.*?\.([a-z]{2}-[a-z]{3})\.k\.ripe\.net$/,
+//		'a': /^(?:rootns-|nnn1-)([a-z]{3})\d$/,
+//		'b': /^b\d-([a-z]{3})$/,
+//		'c': /^([a-z]{3})\d[a-z]\.c\.root-servers\.org$/,
+//		'd': /^([a-z]{4})\d\.droot\.maxgigapop\.net$/,
+//		'e': /^(?:[a-z]\d+)\.([a-z]{3}[a-z]?)\.eroot$/,
+//		'f': /^([a-z]{3})(?:\d[a-z]|\.cf)\.f\.root-servers\.org$/,
+//		'g': /^groot-?-(.*?)-.*?(\.net)?$/,
+//		'h': /^\d+\.([a-z]{3})\.h\.root-servers\.org$/,
+//		'i': /^s\d\.([a-z]{3})$/,
+//		'j': /^(?:rootns-(?:el)?|nnn1-)([a-z]{3})\d$/,
+//		'k': /^.*?\.([a-z]{2}-[a-z]{3})\.k\.ripe\.net$/,
 		'l': /^([a-z]{2}-[a-z]{3})-[a-z]{2}$/,
-		'm': /^m-([a-z]{3})(-[a-z]+)?-\d$/
+//		'm': /^m-([a-z]{3})(-[a-z]+)?-\d$/
 	};
 
 	// persistent state, to go in the URL
