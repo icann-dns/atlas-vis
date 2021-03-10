@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Atlas Data Viewer</title>
+<title>Atlas Data Viewer (IMRS Version)</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
 <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -9,12 +9,12 @@
 <div id="container">
 <div id="map"> </div>
 <div id="controls">
-  <input id="sinput" type="range" min="100" max="500" list="sticks"/>
+  <input id="sinput" type="range" min="50" max="500" list="sticks"/>
   <div id="slabel"></div>
-  <input id="rinput" type="range" min="1" max="13" list="rticks"/>
-  <div id="rlabel"></div>
+  <!--<input id="rinput" type="range" min="1" max="13" list="rticks"/>
+  <div id="rlabel"></div>-->
   <select id="letter">
-    <option value="">- all -</option>
+    <option value="L">L</option>
   </select>
   <div id="llabel">Root Operator</div>
 </div>

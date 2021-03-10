@@ -69,11 +69,11 @@ $(function() {
 	//
 	function getDefaults() {
 		$.extend(true, state, {
-			zoom: 3,
-			center: [0, 30],
+			zoom: 1,
+			center: [10, 30],
 			top: 1,
-			scale: 100,
-			letter: undefined,
+			scale: 105,
+			letter: 'l',
 		});
 	}
 
@@ -219,10 +219,10 @@ $(function() {
 
 	function getColour(ms, scale) {
 		let r = Math.min(ms, scale) / scale;	// 0 .. 1
-		r = Math.pow(r, 0.8);					// non-linear
+		r = Math.pow(r, 1.2);					// non-linear. And a bit bigger
 		const h = Math.floor(120 * (1 - r));	// 120 .. 0
 
-		return [h, `hsla(${h}, 80%, 50%, 0.6)`];
+		return [h, `hsla(${h}, 60%, 40%, 0.6)`];
 	}
 
 	function getProbeStyle(feature, resolution) {
