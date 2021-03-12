@@ -76,7 +76,7 @@ $(function() {
 			center: [10, 30],
 			top: 1,
 			scale: 105,
-			letter: 'l',
+			letter: 'imrs',
 		});
 	}
 
